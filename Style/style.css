@@ -1,0 +1,33 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    color: #fff;
+}
+
+header nav menu{
+    list-style: none;
+}
+
+header nav menu{
+    display: flex;
+}
+
+header nav menu li a{
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+section{
+    text-align: center;
+    height: 100vh;
+}
+
+section:nth-child(odd){
+    background-color: aqua;
+}
