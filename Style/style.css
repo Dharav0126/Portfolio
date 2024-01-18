@@ -29,6 +29,12 @@ header nav menu li a{
     padding: 10px;
 }
 
+header nav menu li a:hover, header nav menu li a.active{
+    color: aqua;
+}
+
+
+
 section{
     text-align: center;
     height: 100vh;
