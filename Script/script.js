@@ -2,17 +2,19 @@ let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav menu li a');
 
 window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight; // Corrected typo here
-        let id = sec.getAttribute('id');
+    let fromTop = window.scrollY + 150;
 
-        if (top >= offset && top < offset + height) {
+    navLinks.forEach(link => {
+        let section = document.querySelector(link.hash);
+
+        if (
+            section.offsetTop <= fromTop &&
+            section.offsetTop + section.offsetHeight > fromTop
+        ) {
             navLinks.forEach(link => {
                 link.classList.remove('active');
             });
-            document.querySelector('header nav menu li a[href*=' + id + ']').classList.add('active');
+            link.classList.add('active');
         }
     });
-}
+};
