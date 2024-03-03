@@ -1,54 +1,170 @@
-body{
+*{
     margin: 0%;
     padding: 0%;
 }
-
-html{
-    scroll-behavior: smooth;
+body{
+    min-height: 100vh;
+    background-color: #1E232D;
 }
-
-header{
-    display: flex;
-    background-color: black;
-    color: #fff;
-    position: fixed;
-    width: 100%;
+nav{
     height: 10vh;
 }
-
-header nav menu{
+nav ul{
+    width: 100%;
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
-
-header nav menu{
+nav li{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    height: 100%;
+    padding: 0px 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #f8f8f8;
+}
+nav a:hover{
+    font-size: 1.2em;
+    color: red;
+}
+button:hover{
+    font-size: 1.2em;
+}
+nav li:first-child{
+    margin-right: auto;
+    font-size: 2em;
+}
+.Dharav{
+    margin-left: 10px;
+}
+nav li:last-child{
+    margin-right: 20px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(30, 35, 45, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    display: none;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.Menubutton{
+    display: none;
+}
+button{
+    background-color: red;
+    color: #f8f8f8;
+    border-radius: 12px;
+}
+span{
+    color: red;
+    font-family: "Karla", sans-serif;
+}
+#Home{
+    display: flex;
+    align-items: center;
+    height: auto;
+    color: #f8f8f8;
+    width: 100%;
+}
+.introduction{
+    width: 50%;
+}
+.introduction p, h1{
+    padding: 0.5% 0% 1% 13%;
+}
+.resume{
+    margin: 0.5% 0% 1% 13%;
+    height: 2em;
+    width: 8em;
+}
+.socialmedia{
     display: flex;
 }
-
-a{
-    text-decoration: none;
-    color: #fff;
+.socialmedia img{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
 }
+.socialmedia a{
+    padding: 1% 2%;
 
-header nav menu li a{
-    padding: 10px;
 }
-
-header nav menu li a:hover, header nav menu li a.active{
-    color: aqua;
+.socialmedia img:hover{
+    height: 3.5em;
+    width: 3.5em;
 }
-
-
-
-section{
+.socialmedia a:first-child{
+    padding-left: 13%;
+}
+.image img{
+    border-radius: 50%;
+    height: 55vh;
+}
+#Skills{
+    margin-top: 3em;
     text-align: center;
-    height: 100vh;
+    color: #f8f8f8;
+}
+.skill_logo{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aquamarine;
+    /* padding-top: 3em; */
+}
+.skill_logo img{
+    height: 7%;
+    width: 7%;
+    padding: 3em;
+}
+.skill_logo_mobile{
+    display: none;
+}
+@media(max-width: 800px) {
+    .hideOnmobile{
+        display: none;
+    }
+    .Menubutton{
+        display: block;
+        right: 0;
+    }
+    .skill_logo{
+        display: none;
+    }
+    .skill_logo_mobile{
+        display: block;
+    }
+    .skill_logo_mobile img{
+        height: 7%;
+        width: 7%;
+        padding: 2% 7% 0%;
+    }
 }
 
-section:nth-child(odd){
-    background-color: aqua;
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+    .image{
+        display: none;
+    }
 }
-

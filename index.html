@@ -3,28 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome</title>
+    <title>Dharav's Portfolio</title>
     <script src="./Script/script.js" defer></script>
     <link rel="stylesheet" href="./Style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="logo_container">
-        <a href="./index.html"><p>Dharav's Portfolio</p></a>
+    <!-- header part -->
+    <!-- mobile header -->
+    <nav>
+      <ul class="sidebar">
+        <li onclick=Closesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="index.html">Developer Dharav</a></li>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Contact Me</a></li>
+      </ul>
+      <!-- Desktop header -->
+      <ul>
+        <li><a href="#">Developer <span class="Dharav"> Dharav</span></a></li>
+        <li class="hideOnmobile"><a href="#Home">Home</a></li>
+        <li class="hideOnmobile"><a href="#Skills">Skills</a></li>
+        <li class="hideOnmobile"><a href="#">About Me</a></li>
+        <li class="hideOnmobile"><a href="#">Contact Me</a></li>
+        <li class="Menubutton" onclick=Showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        <li><button>Contact Me</button></li>
+      </ul>
+    </nav>
+    <!-- Home section -->
+    <section id="Home">
+      <div class="introduction">
+        <p>Hi, I am Dharav Patel</p>
+        <h1>I am a <span>Software Developer</span></h1>
+        <p>I am a freelancer</p>
+        <button class="resume">Get my Resume</button>
+        <div class="socialmedia">
+          <a href="https://www.linkedin.com/in/dharav-patel-9a0565273/" target="_blank"><img src="./Img/linkedin.png" alt="LinkedIn"></a>
+          <a href="https://github.com/Dharav0126" target="_blank"><img src="./Img/github.jpg" alt="Github"></a>
+          <a href="https://www.facebook.com/profile.php?id=100089486421633" target="_blank"><img src="./Img/facebook.webp" alt="Facebook"></a>
+          <a href="https://www.instagram.com/nobody.7998/" target="_blank"><img src="./Img/instagram.avif" alt="Instagram"></a>
+        </div>
       </div>
-      <nav>
-        <menu>
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </menu>
-      </nav>
-    </header>
-    <section id="home">Home</section>
-    <section id="about">About</section>
-    <section id="projects">Projects</section>
-    <section id="contact">Contact</section>
+      <div class="image">
+        <img src="./Img/Dharav.JPG" alt="Developer photo">
+      </div>
+    </section>
+    <section id="Skills">
+      <h2>My Skills</h2>
+      <div class="skill_logo">
+        <img src="./Img/java.webp" alt="Java">
+        <img src="./Img/python.png" alt="Python">
+        <img src="./Img/html.png" alt="HTML">
+        <img src="./Img/css.png" alt="CSS">
+        <img src="./Img/javascript.png" alt="JavaScript">
+        <img src="./Img/php.png" alt="php">
+      </div>
+      <div class="skill_logo_mobile">
+        <div class="line-1">
+          <img src="./Img/java.webp" alt="Java">
+          <img src="./Img/python.png" alt="Python">
+          <img src="./Img/html.png" alt="HTML">
+        </div>
+        <div class="line-2">
+          <img src="./Img/css.png" alt="CSS">
+          <img src="./Img/javascript.png" alt="JavaScript">
+          <img src="./Img/php.png" alt="php">
+        </div>
+      </div>
+    </section>
   </body>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </html>
