@@ -30,7 +30,7 @@
         <li class="hideOnmobile"><a href="#">About Me</a></li>
         <li class="hideOnmobile"><a href="#">Contact Me</a></li>
         <li class="Menubutton" onclick=Showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        <li><button>Contact Me</button></li>
+        <li><button onclick=Toggleform()>Contact Me</button></li>
       </ul>
     </nav>
     <!-- Home section -->
@@ -72,6 +72,17 @@
           <img src="./Img/javascript.png" alt="JavaScript">
           <img src="./Img/php.png" alt="php">
         </div>
+      </div>
+    </section>
+    <section class="form_container">
+      <div id="form-container">
+        <button onclick="Closeform()" class="close-btn">&times;</button>
+        <form>
+          <h2>Enter your information to download the resume</h2>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <button type="submit" class="form-buttons">Download</button>
+      </form>
       </div>
     </section>
   </body>
