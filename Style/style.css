@@ -129,17 +129,17 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     /* padding-top: 3em; */
 }
 .skill_logo img{
-    height: 7%;
-    width: 7%;
+    height: 30vh;
+    width: 30vh;
     padding: 3em;
 }
 .skill_logo_mobile{
     display: none;
 }
-
 /* Toggleform css */
 #form-container {
     display: none;
@@ -181,6 +181,70 @@ input, .form-buttons {
     color: #fff;
     cursor: pointer;
 }
+
+/* about section style */
+#about{
+    color: #f8f8f8;
+    margin-top: 5px;
+}
+.introduction_heading{
+    text-align: center;
+}
+.sub_text_container_about{
+    padding: 0% 5%;
+}
+
+#about_grid{
+    margin-top: 5px;
+    display: grid;
+    color: #f8f8f8;
+    width: 100%;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+}
+.text_container_about{
+    left: 0;
+    width: 100%;
+}
+.image_container_about{
+    width: 100%;
+}
+.image_container_about img{
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+}
+.skill_container_about{
+    width: 100%;
+}
+
+/* skills css */
+.skill_heading{
+    text-align: center;
+    padding-bottom: 10px;
+}
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #04AA6D;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 55%; background-color: #808080;} /* Dark Grey */
+.java{width: 70%; background-color: #4F00B7;}
+.python{width: 65%; background-color: #00B7AB;}
 
 @media(max-width: 800px) {
     .hideOnmobile{
