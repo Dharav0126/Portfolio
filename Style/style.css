@@ -242,9 +242,9 @@ input, .form-buttons {
 .html {width: 90%; background-color: #04AA6D;} /* Green */
 .css {width: 80%; background-color: #2196F3;} /* Blue */
 .js {width: 65%; background-color: #f44336;} /* Red */
-.php {width: 55%; background-color: #808080;} /* Dark Grey */
+.php {width: 50%; background-color: #808080;} /* Dark Grey */
 .java{width: 70%; background-color: #4F00B7;}
-.python{width: 65%; background-color: #00B7AB;}
+.python{width: 55%; background-color: #00B7AB;}
 
 @media(max-width: 800px) {
     .hideOnmobile{
