@@ -133,8 +133,8 @@ span{
     /* padding-top: 3em; */
 }
 .skill_logo img{
-    height: 30vh;
-    width: 30vh;
+    height: 15vh;
+    width: 15vh;
     padding: 3em;
 }
 .skill_logo_mobile{
@@ -223,9 +223,9 @@ input, .form-buttons {
     text-align: center;
     padding-bottom: 10px;
 }
-/* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
-
+.skill_container_about{
+    padding-left: 5px;
+}
 /* Container for skill bars */
 .container {
   width: 100%; /* Full width */
